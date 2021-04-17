@@ -3,6 +3,7 @@
 require 'snap_api_client/configuration'
 require 'snap_api_client/errors'
 require 'snap_api_client/response'
+require 'snap_api_client/resources'
 require 'snap_api_client/transport'
 require 'snap_api_client/version'
 
@@ -28,5 +29,9 @@ module SnapAPIClient
 
   def transport
     @transport ||= Transport.new
+  end
+
+  def card_resource
+    @card_resource ||= Resources::Card.new(transport)
   end
 end
