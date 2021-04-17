@@ -1,8 +1,32 @@
 # frozen_string_literal: true
 
-require_relative "snap_api_client/version"
+require 'snap_api_client/configuration'
+require 'snap_api_client/errors'
+require 'snap_api_client/response'
+require 'snap_api_client/transport'
+require 'snap_api_client/version'
 
+# = Snap API Client
+#
+# API client library for consuming Snap API resources
+#
+# @see SnapAPIClient::Configuration
+# @see SnapAPIClient::Transport
+# @see SnapAPIClient::Response
 module SnapAPIClient
-  class Error < StandardError; end
-  # Your code goes here...
+  module_function
+
+  attr_writer :transport
+
+  def configuration
+    @configuration ||= Configuration.new
+  end
+
+  def configure
+    yield(configuration) if block_given?
+  end
+
+  def transport
+    @transport ||= Transport.new
+  end
 end
