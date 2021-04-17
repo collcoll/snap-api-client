@@ -1,8 +1,6 @@
-# SnapAPIClient
+# Snap API Client
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/snap_api_client`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+API client library for consuming Snap API resources.
 
 ## Installation
 
@@ -20,10 +18,6 @@ Or install it yourself as:
 
     $ gem install snap_api_client
 
-## Usage
-
-TODO: Write usage instructions here
-
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
@@ -40,4 +34,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the SnapAPIClient project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/snap_api_client/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Snap API Client project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/snap_api_client/blob/master/CODE_OF_CONDUCT.md).
