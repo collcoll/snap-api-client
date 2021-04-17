@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+bundle exec rubocop --auto-correct-all --only Style/FrozenStringLiteralComment --format s &&
+bundle exec rubocop --auto-correct --display-cop-names --extra-details --display-style-guide
