@@ -2,6 +2,8 @@
 
 API client library for consuming Snap API resources.
 
+:warning: **This library is in active development and won't be stable until version 1.0** :warning:
+
 ## Installation
 
 Add this line to your application's Gemfile:
