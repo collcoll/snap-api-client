@@ -34,4 +34,12 @@ module SnapAPIClient
   def card_resource
     @card_resource ||= Resources::Card.new(transport)
   end
+
+  def effort_resource
+    @effort_resource ||= Resources::Effort.new(transport)
+  end
+
+  def project_resource
+    @project_resource ||= Resources::Project.new(transport)
+  end
 end
