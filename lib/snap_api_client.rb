@@ -42,4 +42,8 @@ module SnapAPIClient
   def project_resource
     @project_resource ||= Resources::Project.new(transport)
   end
+
+  def pull_request
+    @pull_request ||= Resources::PullRequest.new(transport)
+  end
 end
